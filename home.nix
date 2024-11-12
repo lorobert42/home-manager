@@ -76,10 +76,20 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  programs.bat.enable = true;
+
   programs.eza.enable = true;
+  
+  programs.fd.enable = true;
 
   programs.fzf = {
     enable = true;
+  };
+
+  programs.git = {
+    enable = true;
+    userEmail = "lorobert@student.42lausanne.ch";
+    userName = "lorobert";
   };
 
   programs.helix = {
