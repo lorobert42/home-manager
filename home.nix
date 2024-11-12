@@ -50,7 +50,8 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
     ".config/zellij/config.kdl".source = files/zellij.kdl;
-    ".bashrc".source = files/.bashrc;
+    ".bashrc".source = files/bashrc;
+    ".config/oh-my-posh/config.json".source = files/omp.json;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
@@ -136,7 +137,6 @@
 
   programs.oh-my-posh = {
     enable = true;
-    settings = builtins.fromJSON (builtins.unsafeDiscardStringContext (builtins.readFile "${config.home.homeDirectory}/.config/home-manager/files/omp.json"));
   };
 
   programs.ripgrep.enable = true;
