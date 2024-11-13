@@ -55,6 +55,12 @@
           "background": "transparent",
           "type": "python",
           "style": "plain"
+        },
+        {
+          "type": "nix-shell",
+          "style": "plain",
+          "foreground": "blue",
+          "background": "transparent"
         }
       ],
       "newline": true
