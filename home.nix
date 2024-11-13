@@ -51,6 +51,7 @@
     # ".screenrc".source = dotfiles/screenrc;
     ".config/zellij/config.kdl".source = files/zellij.kdl;
     ".bashrc".source = files/bashrc;
+    ".zshrc".source = files/zshrc;
     ".config/oh-my-posh/config.json".source = files/omp.json;
 
     # # You can also set the file content immediately.
@@ -141,19 +142,7 @@
 
   programs.ripgrep.enable = true;
 
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    enableVteIntegration = true;
-    autocd = true;
-    autosuggestion.enable = true;
-    history.ignoreAllDups = true;
-    historySubstringSearch.enable = true;
-    shellAliases = {
-      c = "clear";
-    };
-    syntaxHighlighting.enable = true;
-  };
+  programs.zsh.enable = true;
 
   programs.zellij.enable = true;
 }
